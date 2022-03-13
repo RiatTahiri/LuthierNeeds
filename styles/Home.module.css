@@ -1,3 +1,36 @@
-#titleCard {
-    color: #FFFF;
+.mainHeader {
+    width: 100vw;
+    background-image: url('../public/girl_guitar.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+
+.content .mainTitle {
+    font-size: 1.5rem;
+}
+
+.content .mainDescription {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.exploreLink {
+    color: #ffff;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    padding: 6px;
+    border-radius: 10px;
 }

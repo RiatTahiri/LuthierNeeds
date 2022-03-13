@@ -4,21 +4,18 @@ import navStyle from '../styles/Nav.module.css';
 
 const Nav = () => {
     return (
-        <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
-            <div className='container'>
-            <Image src='/logo.png' width={40} height={40}></Image>
+        <nav className={navStyle.navBar}>
+            <div className={navStyle.container}>
+                <div>
+                    <h2>LOGO</h2>
+                </div>
 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span className='navbar-toggler-icon'></span>
-                </button>
-
-                <div className='collapse navbar-collapse' id='navmenu'>
-                    <ul className='navbar-nav mx-auto '>
-                        <li className='nav-item'> <Link href='/'><a className={navStyle.navLink}>Home</a></Link></li>
-                        <li className='nav-item'> <Link href='/profile'><a className={navStyle.navLink}>Profile</a></Link> </li>
-                        <li className='nav-item'> <Link href='/browse'><a className={navStyle.navLink}>Browse</a></Link> </li>
+                <div className={navStyle.navLinks}>
+                    <ul>
+                        <input type='text' placeholder='Search' className={navStyle.searchBar}></input>
+                        <li><a>Home</a></li>
+                        <li><a>Login</a></li>
                     </ul>
-                    <li> <Link href='/logout'><a className={navStyle.navLink}>Log out</a></Link> </li>
                 </div>
             </div>
         </nav>

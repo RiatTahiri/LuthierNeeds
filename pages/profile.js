@@ -1,4 +1,4 @@
-export default function Home() {
+export default function profile() {
     return (
       <div>
         <h1>Hello world</h1>
